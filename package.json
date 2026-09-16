@@ -1,0 +1,10 @@
+{
+  "main": "src/main.js",
+  "scripts": {
+    "dev": "node --watch ."
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.23.0"
+  }
+}

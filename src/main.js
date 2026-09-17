@@ -241,7 +241,7 @@ app.patch("/api/supplier/product-name", async (req, res) => {
 
 // update the price of 'Bread' to 25.00.
 // http://127.0.0.1:3000/api/product/bread-price-25
-app.put("/api/product/bread-price-25", async (req, res) => {
+app.patch("/api/product/bread-price-25", async (req, res) => {
   await pool.query("UPDATE products SET price = 25.00 WHERE name = 'Bread'");
 
   res.json({
